@@ -55,14 +55,14 @@
   --ink: oklch(0.21 0.02 268);
 
   --background: #652c7f; /* flat violet fill from flier */
-  --foreground: oklch(0.98 0.005 290);
+  --foreground: oklch(1 0 0);
   --surface: color-mix(in oklab, #652c7f 92%, white);
   --surface-2: color-mix(in oklab, #652c7f 84%, white);
 
   --card: color-mix(in oklab, #652c7f 88%, white);
-  --card-foreground: oklch(0.98 0.005 290);
+  --card-foreground: oklch(1 0 0);
   --popover: color-mix(in oklab, #652c7f 88%, white);
-  --popover-foreground: oklch(0.98 0.005 290);
+  --popover-foreground: oklch(1 0 0);
 
   --primary: #3fa1da;
   --primary-foreground: oklch(1 0 0);
@@ -70,9 +70,9 @@
   --secondary-foreground: oklch(1 0 0);
 
   --muted: color-mix(in oklab, #652c7f 78%, white);
-  --muted-foreground: oklch(0.8 0.035 295);
+  --muted-foreground: oklch(1 0 0 / 0.75);
   --accent: #3fa1da;
-  --accent-foreground: oklch(0.18 0.05 300);
+  --accent-foreground: oklch(1 0 0);
 
 
   --destructive: oklch(0.58 0.2 25);
@@ -137,7 +137,7 @@
 /* Solid brand accents — gradients removed site-wide. Text accents are solid
  * violet; interactive backgrounds are solid cyan that switch to violet on hover. */
 @utility text-gradient {
-  color: var(--brand-cyan);
+  color: oklch(1 0 0);
 }
 
 @utility bg-brand-gradient {

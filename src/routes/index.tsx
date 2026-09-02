@@ -86,10 +86,14 @@ function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-1.5 text-xs tracking-[0.22em] text-muted-foreground uppercase backdrop-blur"
+            className="mb-6 inline-flex w-fit flex-wrap items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-1.5 text-xs tracking-[0.22em] text-foreground uppercase backdrop-blur"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
-            Branding · Signage · Printing
+            <span>Branding</span>
+            <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
+            <span>Signage</span>
+            <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
+            <span>Printing</span>
           </motion.span>
 
           <motion.h1

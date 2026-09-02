@@ -81,7 +81,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "marketing",
-    title: "Corporate Marketing Ware",
+    title: "Corporate Marketing Wear",
     copy: "Everything that makes an activation, launch or exhibition look properly funded.",
     items: [
       "Roll-up, teardrop & telescopic banners",

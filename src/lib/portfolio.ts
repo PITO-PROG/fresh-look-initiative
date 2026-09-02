@@ -182,7 +182,7 @@ export const PRODUCT_GUIDE = [
       "Business cards, complimentary slips, delivery notes, letterheads, envelopes, notebooks & notepads, receipt books, reports, portfolios, staff IDs, lanyards.",
   },
   {
-    title: "Corporate marketing ware",
+    title: "Corporate marketing materials",
     items:
       "Fliers, posters, brochures, roll-up banners, media banners, tear drop banners, telescopic banners, flags, wheel covers, carrier bags, buntings, magazines.",
   },

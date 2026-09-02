@@ -137,7 +137,7 @@
 /* Solid brand accents — gradients removed site-wide. Text accents are solid
  * violet; interactive backgrounds are solid cyan that switch to violet on hover. */
 @utility text-gradient {
-  color: var(--brand-cyan);
+  color: oklch(1 0 0);
 }
 
 @utility bg-brand-gradient {

@@ -50,28 +50,28 @@
 :root {
   --radius: 0.75rem;
 
-  --brand-cyan: #2990d3;
-  --brand-violet: #45206d;
+  --brand-cyan: #3fa1da;
+  --brand-violet: #652c7f;
   --ink: oklch(0.21 0.02 268);
 
-  --background: oklch(0.24 0.09 300); /* flier violet canvas #45206d */
+  --background: #652c7f; /* flat violet fill from flier */
   --foreground: oklch(0.98 0.005 290);
-  --surface: oklch(0.28 0.095 300);
-  --surface-2: oklch(0.33 0.1 300);
+  --surface: color-mix(in oklab, #652c7f 92%, white);
+  --surface-2: color-mix(in oklab, #652c7f 84%, white);
 
-  --card: oklch(0.27 0.09 300);
+  --card: color-mix(in oklab, #652c7f 88%, white);
   --card-foreground: oklch(0.98 0.005 290);
-  --popover: oklch(0.27 0.09 300);
+  --popover: color-mix(in oklab, #652c7f 88%, white);
   --popover-foreground: oklch(0.98 0.005 290);
 
-  --primary: #2990d3;
+  --primary: #3fa1da;
   --primary-foreground: oklch(1 0 0);
-  --secondary: #45206d;
+  --secondary: #652c7f;
   --secondary-foreground: oklch(1 0 0);
 
-  --muted: oklch(0.32 0.085 300);
+  --muted: color-mix(in oklab, #652c7f 78%, white);
   --muted-foreground: oklch(0.8 0.035 295);
-  --accent: #29abe2;
+  --accent: #3fa1da;
   --accent-foreground: oklch(0.18 0.05 300);
 
 
@@ -80,7 +80,7 @@
 
   --border: oklch(1 0 0 / 14%);
   --input: oklch(1 0 0 / 22%);
-  --ring: #2990d3;
+  --ring: #3fa1da;
 
   /* gradients removed site-wide — brand colour is applied as alternating solids */
   --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--brand-cyan) 22%, transparent),

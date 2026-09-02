@@ -6,7 +6,7 @@
 
 /*
  * Brand It KE design system.
- * Brand palette: cyan #29ABE2, violet #6B2C91, near-black canvas.
+ * Brand palette (from fliers): blue #2990d3, bright cyan #29abe2, violet #45206d.
  * All colors in oklch. Never hardcode colors in components.
  */
 
@@ -50,36 +50,37 @@
 :root {
   --radius: 0.75rem;
 
-  --brand-cyan: #3fa1da;
-  --brand-violet: #652c7f;
+  --brand-cyan: #2990d3;
+  --brand-violet: #45206d;
   --ink: oklch(0.21 0.02 268);
 
-  --background: oklch(0.16 0.035 305); /* deep violet-ink canvas */
-  --foreground: oklch(0.96 0.01 290);
-  --surface: oklch(0.2 0.045 302);
-  --surface-2: oklch(0.25 0.05 300);
+  --background: oklch(0.24 0.09 300); /* flier violet canvas #45206d */
+  --foreground: oklch(0.98 0.005 290);
+  --surface: oklch(0.28 0.095 300);
+  --surface-2: oklch(0.33 0.1 300);
 
-  --card: oklch(0.19 0.04 302);
-  --card-foreground: oklch(0.96 0.01 290);
-  --popover: oklch(0.19 0.04 302);
-  --popover-foreground: oklch(0.96 0.01 290);
+  --card: oklch(0.27 0.09 300);
+  --card-foreground: oklch(0.98 0.005 290);
+  --popover: oklch(0.27 0.09 300);
+  --popover-foreground: oklch(0.98 0.005 290);
 
-  --primary: #3fa1da;
-  --primary-foreground: oklch(0.99 0.003 240);
-  --secondary: #652c7f;
-  --secondary-foreground: oklch(0.99 0.003 240);
+  --primary: #2990d3;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: #45206d;
+  --secondary-foreground: oklch(1 0 0);
 
-  --muted: oklch(0.26 0.04 300);
-  --muted-foreground: oklch(0.74 0.04 295);
-  --accent: #652c7f;
-  --accent-foreground: oklch(0.99 0.003 240);
+  --muted: oklch(0.32 0.085 300);
+  --muted-foreground: oklch(0.8 0.035 295);
+  --accent: #29abe2;
+  --accent-foreground: oklch(0.18 0.05 300);
+
 
   --destructive: oklch(0.58 0.2 25);
   --destructive-foreground: oklch(0.99 0.003 240);
 
   --border: oklch(1 0 0 / 14%);
   --input: oklch(1 0 0 / 22%);
-  --ring: #3fa1da;
+  --ring: #2990d3;
 
   /* gradients removed site-wide — brand colour is applied as alternating solids */
   --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--brand-cyan) 22%, transparent),

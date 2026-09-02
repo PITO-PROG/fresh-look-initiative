@@ -57,7 +57,7 @@ export function PageHero({
           initial={{ opacity: 0, letterSpacing: "0.5em" }}
           animate={{ opacity: 1, letterSpacing: "0.24em" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className={cn("text-xs uppercase", onImage ? "text-primary-foreground/80" : "text-cyan")}
+          className={cn("text-xs uppercase", onImage ? "text-primary-foreground" : "text-cyan")}
         >
           {eyebrow}
         </motion.p>
@@ -71,7 +71,7 @@ export function PageHero({
           {highlight ? (
             <>
               {" "}
-              <span className={onImage ? "text-primary-foreground/70" : "text-gradient"}>
+              <span className={onImage ? "text-primary-foreground" : "text-gradient"}>
                 <SplitText text={highlight} />
               </span>
             </>
@@ -83,7 +83,7 @@ export function PageHero({
           transition={{ duration: 0.8, delay: 0.35 }}
           className={cn(
             "mt-6 max-w-2xl text-base sm:text-lg",
-            onImage ? "text-primary-foreground/80" : "text-muted-foreground",
+            onImage ? "text-primary-foreground" : "text-muted-foreground",
           )}
         >
           {copy}

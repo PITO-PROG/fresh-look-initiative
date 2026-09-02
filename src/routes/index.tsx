@@ -183,7 +183,7 @@ function Marquee() {
         {[...MARQUEE, ...MARQUEE].map((item, i) => (
           <span
             key={`${item}-${i}`}
-            className="flex items-center gap-12 font-display text-lg tracking-tight text-primary-foreground/90"
+            className="flex items-center gap-12 font-display text-lg tracking-tight text-primary-foreground"
           >
             {item}
             <span className="h-1.5 w-1.5 rounded-full bg-primary-foreground/70" />
@@ -306,7 +306,7 @@ function StatsBand() {
             className="rounded-2xl border border-primary-foreground/20 bg-primary-foreground/10 px-6 py-6 backdrop-blur-sm"
           >
             <p className="font-display text-4xl font-bold text-primary-foreground">{s.value}</p>
-            <p className="mt-2 text-sm text-primary-foreground/75">{s.label}</p>
+            <p className="mt-2 text-sm text-primary-foreground">{s.label}</p>
           </motion.div>
         ))}
       </div>
@@ -346,11 +346,11 @@ function ProductGuide() {
         className="dot-grid pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay"
       />
       <FadeUp>
-        <p className="relative z-10 text-xs tracking-[0.24em] text-primary-foreground/80 uppercase">
+        <p className="relative z-10 text-xs tracking-[0.24em] text-primary-foreground uppercase">
           Products guide
         </p>
         <h2 className="relative z-10 mt-5 max-w-2xl text-4xl leading-[1.05] font-bold text-primary-foreground sm:text-5xl">
-          One supplier for <span className="text-primary-foreground/70">every deliverable</span>.
+          One supplier for <span className="text-primary-foreground">every deliverable</span>.
         </h2>
       </FadeUp>
 
@@ -363,14 +363,14 @@ function ProductGuide() {
               style={{ transformPerspective: 900 }}
               className="card-glass-dark group h-full p-7"
             >
-              <span className="pointer-events-none absolute right-5 top-1 font-display text-7xl font-bold text-primary-foreground/10 transition-colors duration-500 group-hover:text-primary-foreground/20">
+              <span className="pointer-events-none absolute right-5 top-1 font-display text-7xl font-bold text-primary-foreground transition-colors duration-500 group-hover:text-primary-foreground">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="relative z-10">
                 <h3 className="font-display text-lg font-semibold text-primary-foreground">
                   {group.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-primary-foreground/75">
+                <p className="mt-3 text-sm leading-relaxed text-primary-foreground">
                   {group.items}
                 </p>
               </div>
@@ -429,7 +429,7 @@ function PromiseBand() {
       />
       <div className="relative z-10 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
         <FadeUp>
-          <p className="text-xs tracking-[0.24em] text-primary-foreground/80 uppercase">
+          <p className="text-xs tracking-[0.24em] text-primary-foreground uppercase">
             Why Brand It
           </p>
           <h2 className="mt-5 text-4xl leading-[1.05] font-bold text-primary-foreground sm:text-5xl">
@@ -443,7 +443,7 @@ function PromiseBand() {
                 <h3 className="font-display text-lg font-semibold text-primary-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-primary-foreground/75">{item.copy}</p>
+                <p className="mt-2 text-sm text-primary-foreground">{item.copy}</p>
               </div>
             </StaggerItem>
           ))}
@@ -472,7 +472,7 @@ function CtaBand() {
             <h2 className="text-3xl font-bold text-primary-foreground sm:text-4xl">
               Let's brand it.
             </h2>
-            <p className="mt-3 max-w-md text-sm text-primary-foreground/80">
+            <p className="mt-3 max-w-md text-sm text-primary-foreground">
               Share your event, fleet, office or campaign — we'll come back with concepts,
               materials and a timeline.
             </p>

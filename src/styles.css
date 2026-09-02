@@ -70,7 +70,7 @@
   --secondary-foreground: oklch(1 0 0);
 
   --muted: color-mix(in oklab, #652c7f 78%, white);
-  --muted-foreground: oklch(1 0 0 / 0.75);
+  --muted-foreground: oklch(1 0 0);
   --accent: #3fa1da;
   --accent-foreground: oklch(1 0 0);
 

@@ -3,8 +3,10 @@ import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 
 import { MediaSlot } from "@/components/MediaSlot";
 import { PageHero } from "@/components/PageHero";
+import { ServiceGallery } from "@/components/ServiceGallery";
 import { FadeUp, MaskReveal, SlideIn, Stagger, StaggerItem } from "@/components/motion";
 import { media } from "@/lib/media";
+import { getWorksForService } from "@/lib/portfolio";
 import { SERVICES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services/$slug")({
@@ -57,6 +59,7 @@ function ServiceDetail() {
   const { service } = Route.useLoaderData();
   const heroImage = media[service.image];
   const others = SERVICES.filter((s) => s.slug !== service.slug);
+  const gallery = getWorksForService(service.slug);
 
   return (
     <>
@@ -137,6 +140,21 @@ function ServiceDetail() {
           ))}
         </Stagger>
       </section>
+
+      {gallery.length > 0 && (
+        <section className="mx-auto max-w-7xl px-5 pb-20">
+          <FadeUp>
+            <h2 className="text-3xl font-bold sm:text-4xl">Project gallery</h2>
+            <p className="mt-4 max-w-xl text-sm text-muted-foreground">
+              A selection of real Brand It KE work that falls under {service.short.toLowerCase()}.
+              Tap any image to see it larger.
+            </p>
+          </FadeUp>
+          <div className="mt-10">
+            <ServiceGallery items={gallery} />
+          </div>
+        </section>
+      )}
 
       <section className="mx-auto max-w-7xl px-5 pb-20">
         <FadeUp>

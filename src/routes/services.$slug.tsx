@@ -141,6 +141,21 @@ function ServiceDetail() {
         </Stagger>
       </section>
 
+      {gallery.length > 0 && (
+        <section className="mx-auto max-w-7xl px-5 pb-20">
+          <FadeUp>
+            <h2 className="text-3xl font-bold sm:text-4xl">Project gallery</h2>
+            <p className="mt-4 max-w-xl text-sm text-muted-foreground">
+              A selection of real Brand It KE work that falls under {service.short.toLowerCase()}.
+              Tap any image to see it larger.
+            </p>
+          </FadeUp>
+          <div className="mt-10">
+            <ServiceGallery items={gallery} />
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-7xl px-5 pb-20">
         <FadeUp>
           <div className="halo section-mesh flex flex-col items-start gap-5 rounded-3xl border border-border p-10 sm:flex-row sm:items-center sm:justify-between">

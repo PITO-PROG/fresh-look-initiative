@@ -59,6 +59,7 @@ function ServiceDetail() {
   const { service } = Route.useLoaderData();
   const heroImage = media[service.image];
   const others = SERVICES.filter((s) => s.slug !== service.slug);
+  const gallery = getWorksForService(service.slug);
 
   return (
     <>

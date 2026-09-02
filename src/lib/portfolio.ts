@@ -71,6 +71,25 @@ export type WorkItem = {
   category: WorkCategory;
 };
 
+/**
+ * Map each service detail page to the portfolio categories that should
+ * appear in its gallery.
+ */
+export const SERVICE_GALLERY_CATEGORIES: Record<string, WorkCategory[]> = {
+  signage: ["3D & Shopfront Signs", "Illuminated & Neon", "Roadside & Wayfinding"],
+  vehicle: ["Vehicle Branding"],
+  promo: ["Promo Items", "Corporate Wear"],
+  print: ["Print & Stationery"],
+  design: ["Print & Stationery"],
+  marketing: ["Banners & Activation"],
+};
+
+export function getWorksForService(slug: string): WorkItem[] {
+  const categories = SERVICE_GALLERY_CATEGORIES[slug];
+  if (!categories) return [];
+  return WORK.filter((w) => categories.includes(w.category));
+}
+
 export const WORK: WorkItem[] = [
   // 3D & shopfront
   { src: signFadeFactory, title: "Shopfront fascia & 3D letters", client: "Fade Factory", category: "3D & Shopfront Signs" },

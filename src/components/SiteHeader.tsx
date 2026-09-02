@@ -136,14 +136,14 @@ function ServicesMenu() {
         aria-haspopup="menu"
         onFocus={show}
         onClick={() => setOpen(false)}
-        className="group relative flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-        activeProps={{ className: "text-foreground" }}
+        className="group relative flex items-center gap-1.5 text-sm font-medium text-[#652c7f] transition-colors hover:text-[#3fa1da]"
+        activeProps={{ className: "text-[#3fa1da]" }}
       >
         Services
         <ChevronDown
           className={`h-3.5 w-3.5 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
-        <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-brand-gradient transition-all duration-300 group-hover:w-full" />
+        <span className="absolute -bottom-1.5 left-0 h-0.5 w-0 bg-[#3fa1da] transition-all duration-300 group-hover:w-full" />
       </Link>
 
       {open && (
@@ -152,7 +152,7 @@ function ServicesMenu() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.18 }}
           role="menu"
-          className="glass absolute top-full left-1/2 mt-4 w-72 -translate-x-1/2 rounded-2xl p-2"
+          className="absolute top-full left-1/2 mt-4 w-64 -translate-x-1/2 rounded-2xl border border-[#652c7f]/10 bg-white p-2 shadow-xl"
         >
           {SERVICES.map((service) => (
             <Link
@@ -161,17 +161,16 @@ function ServicesMenu() {
               params={{ slug: service.slug }}
               role="menuitem"
               onClick={() => setOpen(false)}
-              className="block rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-surface-2 hover:text-foreground"
-              activeProps={{ className: "bg-surface-2 text-foreground" }}
+              className="block rounded-xl px-3 py-2.5 text-sm font-medium text-[#652c7f] transition-colors hover:bg-[#652c7f]/5 hover:text-[#3fa1da]"
+              activeProps={{ className: "bg-[#652c7f]/5 text-[#3fa1da]" }}
             >
-              <span className="font-medium">{service.short}</span>
-              <span className="mt-0.5 block text-xs text-muted-foreground/80">{service.title}</span>
+              {service.short}
             </Link>
           ))}
           <Link
             to="/services"
             onClick={() => setOpen(false)}
-            className="mt-1 block rounded-xl px-3 py-2.5 text-xs tracking-[0.14em] text-cyan uppercase hover:bg-surface-2"
+            className="mt-1 block rounded-xl px-3 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#3fa1da] hover:bg-[#652c7f]/5"
           >
             View all services
           </Link>

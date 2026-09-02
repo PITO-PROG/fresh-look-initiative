@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { SERVICES } from "@/lib/site-data";
 
-const LOGO_SRC = "/brandit-logo-light.png";
+const LOGO_SRC = "/brandit-logo.png";
 
 
 export const NAV = [

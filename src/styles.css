@@ -80,7 +80,7 @@
 
   --border: oklch(1 0 0 / 14%);
   --input: oklch(1 0 0 / 22%);
-  --ring: #3fa1da;
+  --ring: #2990d3;
 
   /* gradients removed site-wide — brand colour is applied as alternating solids */
   --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--brand-cyan) 22%, transparent),

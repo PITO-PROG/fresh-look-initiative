@@ -55,16 +55,21 @@ function ServiceNotFound() {
 
 function ServiceDetail() {
   const { service } = Route.useLoaderData();
+  const heroImage = media[service.image];
   const others = SERVICES.filter((s) => s.slug !== service.slug);
 
   return (
     <>
-      <PageHero
-        eyebrow="Service"
-        title={service.title}
-        copy={service.copy}
-        image={media[service.image] ?? undefined}
-      />
+      {heroImage ? (
+        <PageHero
+          eyebrow="Service"
+          title={service.title}
+          copy={service.copy}
+          image={heroImage}
+        />
+      ) : (
+        <PageHero eyebrow="Service" title={service.title} copy={service.copy} />
+      )}
 
       <div className="mx-auto max-w-7xl px-5 py-20">
         <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-start">

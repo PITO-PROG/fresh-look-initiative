@@ -8,7 +8,7 @@ import { SERVICES } from "@/lib/site-data";
 
 import servicesHero from "@/assets/photos/lit-letters.jpg";
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       { title: "Services | Signage, Vehicle Branding & Printing — Brand It" },
@@ -73,6 +73,13 @@ function ServicesPage() {
                     </StaggerItem>
                   ))}
                 </Stagger>
+                <Link
+                  to="/services/$slug"
+                  params={{ slug: service.slug }}
+                  className="mt-8 inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition-colors hover:border-cyan hover:text-cyan"
+                >
+                  Explore {service.short} <ArrowUpRight className="h-4 w-4" />
+                </Link>
               </SlideIn>
             </section>
           );

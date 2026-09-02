@@ -6,6 +6,14 @@ export type Service = {
   copy: string;
   items: string[];
   image: MediaKey;
+  /** Short label used in the header dropdown. */
+  short: string;
+  /** Long-form intro for the service detail page. */
+  intro: string;
+  /** Three pillars explaining how we deliver the service. */
+  pillars: { title: string; copy: string }[];
+  /** Typical briefs this service answers. */
+  useCases: string[];
 };
 
 export const SERVICES: Service[] = [
@@ -22,6 +30,20 @@ export const SERVICES: Service[] = [
       "Billboard construction & installation",
     ],
     image: "services.signage",
+    short: "Signage",
+    intro:
+      "Signage is the loudest thing your brand owns. We fabricate in our own Nairobi workshop — aluminium, acrylic, steel, ACP and LED — so tolerances, finishes and lead times stay under our control. Every job is surveyed, drawn to scale and mocked up on a photo of your building before a single sheet is cut.",
+    pillars: [
+      { title: "Surveyed & drawn", copy: "Site measurements, wind-load and power checks, then scaled drawings and a photo mock-up for sign-off." },
+      { title: "Built in-house", copy: "CNC routing, welding, acrylic forming, spray finishing and LED wiring all happen under one roof." },
+      { title: "Installed by our crew", copy: "Our own riggers handle heights, permits and after-hours installs, then hand over a tested, cleaned sign." },
+    ],
+    useCases: [
+      "New shop front or branch fascia",
+      "Head-office reception and 3D logo wall",
+      "Estate, mall or hospital wayfinding",
+      "Illuminated pylon or billboard build",
+    ],
   },
   {
     slug: "vehicle",
@@ -36,6 +58,20 @@ export const SERVICES: Service[] = [
       "Reception and boardroom branding",
     ],
     image: "services.vehicle",
+    short: "Vehicle & Space Branding",
+    intro:
+      "A branded fleet is advertising you already own. We wrap vehicles with cast vinyl and print interior and exterior space graphics that survive sun, dust and washing. Templates are cut to your exact make and model, and every wrap is heat-sealed and warrantied.",
+    pillars: [
+      { title: "Model-exact templates", copy: "Vehicle-specific panel templates so seams, door handles and curves fall where they should." },
+      { title: "Premium materials", copy: "Cast vinyl, laminated and heat-formed — plus one-way vision film for glass you still want to see out of." },
+      { title: "Fast turnaround", copy: "Most single vehicles are stripped, wrapped and back on the road within a day." },
+    ],
+    useCases: [
+      "Full or partial fleet wraps",
+      "Branch windows and one-way vision glass",
+      "Lift, wall, floor and stairwell branding",
+      "Reception, boardroom and mural artwork",
+    ],
   },
   {
     slug: "promo",
@@ -50,6 +86,20 @@ export const SERVICES: Service[] = [
       "Festive and end-year hampers",
     ],
     image: "services.promo",
+    short: "Promo Items & Wear",
+    intro:
+      "Merchandise only works if people keep using it. We source stock we have tested, then brand it with the right method for the surface — screen print, pad print, embroidery, laser or UV — so the logo outlives the campaign.",
+    pillars: [
+      { title: "Sampled first", copy: "You approve a physical branded sample before we run the full quantity." },
+      { title: "Right print method", copy: "Embroidery for wear, pad print for curves, laser for metal, UV for hard plastics." },
+      { title: "Packed to distribute", copy: "Kitted, boxed and labelled per branch, delegate or team so handover is effortless." },
+    ],
+    useCases: [
+      "Conference and delegate packs",
+      "Staff uniforms, polos and branded caps",
+      "End-year client gifts and hampers",
+      "Everyday giveaways: pens, mugs, umbrellas",
+    ],
   },
   {
     slug: "print",
@@ -64,6 +114,20 @@ export const SERVICES: Service[] = [
       "Certificates and presentation packs",
     ],
     image: "services.print",
+    short: "Print & Stationery",
+    intro:
+      "The paper your brand hands over should feel considered. We print corporate stationery on quality stock with premium finishing — matte and soft-touch lamination, spot UV, foil, emboss and die-cut — with colour matched across every reprint.",
+    pillars: [
+      { title: "Colour consistency", copy: "Locked colour profiles so your third reprint matches the first." },
+      { title: "Premium finishing", copy: "Foil, spot UV, embossing, letterpress edges and die-cutting done in-house." },
+      { title: "Short or long runs", copy: "Digital for small urgent batches, offset for volume — same artwork, same look." },
+    ],
+    useCases: [
+      "Business cards, letterheads, envelopes",
+      "Receipt, invoice and delivery books",
+      "Staff IDs, lanyards and access badges",
+      "Certificates, folders and profile decks",
+    ],
   },
   {
     slug: "design",
@@ -78,6 +142,20 @@ export const SERVICES: Service[] = [
       "Brand guideline documents",
     ],
     image: "services.design",
+    short: "Graphic Design",
+    intro:
+      "Design is the thinking before the printing. We build identities that hold up at billboard scale and at 40mm on a lanyard, then hand you a system — logo suite, colours, type, spacing rules and templates — that any future supplier can follow without diluting the brand.",
+    pillars: [
+      { title: "Strategy first", copy: "We interrogate the audience, the competition and where the brand actually appears before drawing." },
+      { title: "Built for every surface", copy: "Logo variants, safe areas and colour rules tested on signage, vehicles, garments and screens." },
+      { title: "Handover you own", copy: "Editable source files, print-ready exports and a guideline document, all yours." },
+    ],
+    useCases: [
+      "New brand or full identity refresh",
+      "Company profiles, proposals and decks",
+      "Social media template systems",
+      "Brand guidelines for multi-branch teams",
+    ],
   },
   {
     slug: "marketing",
@@ -92,6 +170,20 @@ export const SERVICES: Service[] = [
       "Magazines and newsletters",
     ],
     image: "services.marketing",
+    short: "Corporate Marketing Wear",
+    intro:
+      "Activations, launches and exhibitions are judged in the first five seconds. We produce the whole visual kit — banners, backdrops, gazebos, flags, stands and print — delivered together, on time, and set up on site if you need us there.",
+    pillars: [
+      { title: "One kit, one delivery", copy: "Every item for the event scoped, produced and delivered as a single checked package." },
+      { title: "Event-ready hardware", copy: "Roll-ups, teardrops, telescopic frames and media walls that pack down and travel." },
+      { title: "On-site set-up", copy: "Our team can install, brand the stand and strike it down after the event." },
+    ],
+    useCases: [
+      "Product launches and activations",
+      "Trade shows and exhibition stands",
+      "Conference backdrops and media walls",
+      "Outdoor campaigns: flags, gazebos, buntings",
+    ],
   },
 ];
 

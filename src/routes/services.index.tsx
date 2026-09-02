@@ -8,7 +8,7 @@ import { SERVICES } from "@/lib/site-data";
 
 import servicesHero from "@/assets/photos/lit-letters.jpg";
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       { title: "Services | Signage, Vehicle Branding & Printing — Brand It" },

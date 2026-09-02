@@ -60,13 +60,13 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-[11px] tracking-[0.28em] text-primary-foreground/70 uppercase">
+            <p className="text-[11px] tracking-[0.28em] text-primary-foreground uppercase">
               {active.eyebrow}
             </p>
             <h2 className="mt-2 font-display text-2xl font-semibold text-primary-foreground sm:text-3xl">
               {active.title}
             </h2>
-            <p className="mt-2 max-w-md text-sm text-primary-foreground/80">{active.copy}</p>
+            <p className="mt-2 max-w-md text-sm text-primary-foreground">{active.copy}</p>
           </motion.div>
         </AnimatePresence>
 

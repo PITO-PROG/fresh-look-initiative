@@ -23,7 +23,7 @@ export function ClientLogo({ name, className = "", size = "md" }: Props) {
         className={`flex flex-col items-center justify-center gap-1.5 rounded-xl bg-white px-4 text-center ${className}`}
       >
         <span aria-hidden className="h-1 w-6 rounded-full bg-brand-gradient" />
-        <span className="font-display text-sm leading-tight font-semibold text-foreground/80">
+        <span className="font-display text-sm leading-tight font-semibold text-foreground">
           {name}
         </span>
       </div>

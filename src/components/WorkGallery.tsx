@@ -67,7 +67,7 @@ export function WorkGallery({ limitPerCategory }: { limitPerCategory?: number })
                 <p className="mt-1 font-display text-sm leading-snug font-semibold text-primary-foreground">
                   {item.title}
                 </p>
-                <p className="text-xs text-primary-foreground/70">{item.client}</p>
+                <p className="text-xs text-primary-foreground">{item.client}</p>
               </div>
             </motion.button>
           ))}

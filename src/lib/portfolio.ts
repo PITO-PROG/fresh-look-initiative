@@ -76,13 +76,15 @@ export type WorkItem = {
  * appear in its gallery.
  */
 export const SERVICE_GALLERY_CATEGORIES: Record<string, WorkCategory[]> = {
-  signage: ["3D & Shopfront Signs", "Illuminated & Neon", "Roadside & Wayfinding"],
-  vehicle: ["Vehicle Branding"],
-  promo: ["Promo Items", "Corporate Wear"],
-  print: ["Print & Stationery"],
   design: ["Print & Stationery"],
+  signage: ["3D & Shopfront Signs", "Illuminated & Neon", "Roadside & Wayfinding"],
+  branding: ["Vehicle Branding", "Wall & Window"],
+  stationery: ["Print & Stationery"],
   marketing: ["Banners & Activation"],
+  promo: ["Promo Items"],
+  wear: ["Corporate Wear"],
 };
+
 
 export function getWorksForService(slug: string): WorkItem[] {
   const categories = SERVICE_GALLERY_CATEGORIES[slug];

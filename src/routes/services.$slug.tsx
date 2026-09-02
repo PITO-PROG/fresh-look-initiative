@@ -3,8 +3,10 @@ import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 
 import { MediaSlot } from "@/components/MediaSlot";
 import { PageHero } from "@/components/PageHero";
+import { ServiceGallery } from "@/components/ServiceGallery";
 import { FadeUp, MaskReveal, SlideIn, Stagger, StaggerItem } from "@/components/motion";
 import { media } from "@/lib/media";
+import { getWorksForService } from "@/lib/portfolio";
 import { SERVICES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services/$slug")({

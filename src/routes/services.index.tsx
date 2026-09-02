@@ -15,13 +15,13 @@ export const Route = createFileRoute("/services/")({
       {
         name: "description",
         content:
-          "Signage fabrication, vehicle wraps, promotional items, corporate wear, print, stationery, graphic design and marketing ware — all produced in-house in Nairobi.",
+          "Signage fabrication, vehicle wraps, promotional items, corporate wear, print, stationery, graphic design and marketing materials — all produced in-house in Nairobi.",
       },
       { property: "og:title", content: "Brand It KE Services" },
       {
         property: "og:description",
         content:
-          "Signage, vehicle branding, promo items, corporate wear, print, design and marketing ware from Nairobi.",
+          "Signage, vehicle branding, promo items, corporate wear, print, design and marketing materials from Nairobi.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

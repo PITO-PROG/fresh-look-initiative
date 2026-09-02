@@ -245,6 +245,11 @@ function ServicesTeaser() {
         {SERVICES.map((service, i) => (
           <StaggerItem key={service.slug} variant="flip">
             <TiltCard className="h-full">
+              <Link
+                to="/services/$slug"
+                params={{ slug: service.slug }}
+                className="group block h-full"
+              >
               <div className="relative">
                 <MediaSlot
                   slot={service.image}
@@ -261,7 +266,12 @@ function ServicesTeaser() {
                 <div className="mb-4 h-1 w-12 rounded-full bg-cyan" />
                 <h3 className="font-display text-xl font-semibold">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{service.copy}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan">
+                  Learn more
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </span>
               </div>
+              </Link>
             </TiltCard>
           </StaggerItem>
         ))}

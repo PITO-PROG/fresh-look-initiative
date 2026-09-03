@@ -56,12 +56,12 @@
 
   --background: #54246b; /* flat violet fill from flier */
   --foreground: oklch(1 0 0);
-  --surface: color-mix(in oklab, #54246b 92%, white);
-  --surface-2: color-mix(in oklab, #54246b 84%, white);
+  --surface: #54246b;
+  --surface-2: #54246b;
 
-  --card: color-mix(in oklab, #54246b 88%, white);
+  --card: #54246b;
   --card-foreground: oklch(1 0 0);
-  --popover: color-mix(in oklab, #54246b 88%, white);
+  --popover: #54246b;
   --popover-foreground: oklch(1 0 0);
 
   --primary: #3fa1da;
@@ -69,7 +69,7 @@
   --secondary: #54246b;
   --secondary-foreground: oklch(1 0 0);
 
-  --muted: color-mix(in oklab, #54246b 78%, white);
+  --muted: #54246b;
   --muted-foreground: oklch(1 0 0);
   --accent: #3fa1da;
   --accent-foreground: oklch(1 0 0);
@@ -107,19 +107,6 @@
     overflow-x: hidden;
   }
 
-  /* grained violet wall texture behind everything */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-image: url("/__l5e/assets-v1/c515f43e-0801-4eb8-ad9e-de018b8c91ce/bg-texture-violet.jpg");
-    background-size: cover;
-    background-position: center;
-    mix-blend-mode: luminosity;
-    opacity: 0.7;
-    pointer-events: none;
-  }
 
   h1,
   h2,
@@ -165,22 +152,10 @@
 
 @utility halo {
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -20%;
-    background-color: color-mix(in oklab, var(--brand-cyan) 14%, transparent);
-    border-radius: 9999px;
-    filter: blur(60px);
-    pointer-events: none;
-    z-index: 0;
-  }
 }
 
 @utility glass {
-  background: color-mix(in oklab, var(--background) 72%, transparent);
-  backdrop-filter: blur(18px) saturate(130%);
-  box-shadow: 0 12px 40px -28px oklch(0 0 0 / 70%);
+  background-color: var(--brand-violet);
   border: 1px solid var(--color-border);
 }
 
@@ -189,16 +164,7 @@
 }
 
 @utility grid-lines {
-  background-image: linear-gradient(
-      color-mix(in oklab, var(--brand-cyan) 13%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      color-mix(in oklab, var(--brand-cyan) 13%, transparent) 1px,
-      transparent 1px
-    );
-  background-size: 64px 64px;
+  background-image: none;
 }
 
 @utility marquee-track {
@@ -232,24 +198,8 @@
   animation: floaty 7s var(--ease-brand) infinite;
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
 @utility shimmer {
-  background-image: linear-gradient(
-    100deg,
-    transparent 20%,
-    color-mix(in oklab, var(--brand-cyan) 35%, transparent) 50%,
-    transparent 80%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 3.6s linear infinite;
+  background-image: none;
 }
 
 /* ---------------------------------------------------------------
@@ -287,13 +237,6 @@
   }
 }
 
-@utility aurora-blob {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(70px);
-  will-change: transform;
-  animation: aurora-drift 22s var(--ease-brand) infinite;
-}
 
 @utility float-y {
   animation: float-y 8s var(--ease-brand) infinite;
@@ -305,16 +248,11 @@
 }
 
 @utility noise-overlay {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
-  mix-blend-mode: soft-light;
+  background-image: none;
 }
 
 @utility dot-grid {
-  background-image: radial-gradient(
-    color-mix(in oklab, var(--brand-violet) 22%, transparent) 1px,
-    transparent 1px
-  );
-  background-size: 22px 22px;
+  background-image: none;
 }
 
 @utility perspective-scene {
@@ -330,7 +268,7 @@
 }
 
 @utility surface-3d {
-  background-color: color-mix(in oklab, var(--brand-violet) 16%, var(--surface));
+  background-color: var(--brand-violet);
   border: 1px solid var(--color-border);
 }
 
@@ -341,7 +279,7 @@
 @utility section-band {
   position: relative;
   isolation: isolate;
-  background-color: color-mix(in oklab, var(--surface-2) 82%, transparent);
+  background-color: var(--brand-violet);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -349,7 +287,7 @@
 @utility section-mesh {
   position: relative;
   isolation: isolate;
-  background-color: color-mix(in oklab, var(--brand-cyan) 10%, transparent);
+  background-color: var(--brand-violet);
 }
 
 /* thin luminous rule used to separate sections */
@@ -364,58 +302,28 @@
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
-  background-color: color-mix(in oklab, var(--brand-violet) 18%, var(--surface));
-  box-shadow:
-    0 1px 2px oklch(0 0 0 / 40%),
-    0 10px 24px -18px oklch(0 0 0 / 70%);
+  background-color: var(--brand-violet);
   transition:
     transform 0.5s var(--ease-brand),
-    box-shadow 0.5s var(--ease-brand),
     border-color 0.5s var(--ease-brand);
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      100deg,
-      transparent 35%,
-      color-mix(in oklab, var(--brand-cyan) 16%, transparent) 50%,
-      transparent 65%
-    );
-    transform: translateX(-120%);
-    transition: transform 0.9s var(--ease-brand);
-    pointer-events: none;
-  }
 
   &:hover {
     transform: translateY(-8px);
     border-color: color-mix(in oklab, var(--brand-cyan) 45%, transparent);
-    box-shadow:
-      0 2px 4px oklch(0.21 0.02 268 / 5%),
-      0 26px 60px -30px color-mix(in oklab, var(--brand-violet) 55%, transparent),
-      0 0 0 1px color-mix(in oklab, var(--brand-cyan) 20%, transparent);
-  }
-
-  &:hover::after {
-    transform: translateX(120%);
   }
 }
 
 /* Softer variant for inner tiles */
 @utility tile-hover {
   border: 1px solid var(--color-border);
-  background: color-mix(in oklab, var(--surface) 80%, transparent);
+  background-color: var(--brand-violet);
   transition:
     transform 0.4s var(--ease-brand),
-    border-color 0.4s var(--ease-brand),
-    background-color 0.4s var(--ease-brand),
-    box-shadow 0.4s var(--ease-brand);
+    border-color 0.4s var(--ease-brand);
 
   &:hover {
     transform: translateY(-4px);
     border-color: color-mix(in oklab, var(--brand-cyan) 40%, transparent);
-    box-shadow: 0 18px 40px -28px color-mix(in oklab, var(--brand-cyan) 60%, transparent);
   }
 }
 
@@ -428,7 +336,7 @@
   position: relative;
   isolation: isolate;
   color: var(--primary-foreground);
-  background-color: color-mix(in oklab, var(--brand-violet) 80%, transparent);
+  background-color: var(--brand-violet);
 }
 
 /* Alternate solid band — cyan variant so adjacent accent sections switch colours */
@@ -436,15 +344,15 @@
   position: relative;
   isolation: isolate;
   color: var(--primary-foreground);
-  background-color: color-mix(in oklab, var(--brand-cyan) 88%, transparent);
+  background-color: var(--brand-violet);
 }
 
 @utility section-accent-soft {
   position: relative;
   isolation: isolate;
-  background-color: color-mix(in oklab, var(--brand-violet) 20%, transparent);
-  border-top: 1px solid color-mix(in oklab, var(--brand-cyan) 40%, transparent);
-  border-bottom: 1px solid color-mix(in oklab, var(--brand-violet) 40%, transparent);
+  background-color: var(--brand-violet);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* White tile that keeps client logos legible on any background */
@@ -466,57 +374,20 @@
   }
 }
 
-/* Dark glassmorphism card for accent/gradient sections — proper white-on-dark contrast */
+/* Flat card for accent sections — same solid brand colour, border only */
 @utility card-glass-dark {
   position: relative;
   overflow: hidden;
-  border: 1px solid oklch(1 0 0 / 18%);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
-  background-color: oklch(0.15 0.025 274 / 82%);
-  backdrop-filter: blur(16px) saturate(130%);
-  box-shadow:
-    0 1px 2px oklch(0 0 0 / 30%),
-    0 12px 36px -22px oklch(0 0 0 / 60%);
+  background-color: var(--brand-violet);
   transition:
     transform 0.5s var(--ease-brand),
-    box-shadow 0.5s var(--ease-brand),
     border-color 0.5s var(--ease-brand);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 3px;
-    background-color: var(--brand-cyan);
-    opacity: 0.9;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      100deg,
-      transparent 35%,
-      oklch(1 0 0 / 10%) 50%,
-      transparent 65%
-    );
-    transform: translateX(-120%);
-    transition: transform 0.9s var(--ease-brand);
-    pointer-events: none;
-  }
 
   &:hover {
     transform: translateY(-8px);
-    border-color: oklch(1 0 0 / 38%);
-    box-shadow:
-      0 2px 4px oklch(0 0 0 / 30%),
-      0 26px 60px -28px oklch(0 0 0 / 70%),
-      0 0 0 1px oklch(1 0 0 / 14%);
-  }
-
-  &:hover::after {
-    transform: translateX(120%);
+    border-color: color-mix(in oklab, var(--brand-cyan) 45%, transparent);
   }
 }
 

@@ -11,8 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { CursorGlow } from "@/components/CursorGlow";
-import { AuroraBackground } from "@/components/AuroraBackground";
+
+
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -136,8 +136,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <AuroraBackground />
-      <CursorGlow />
       <SiteHeader />
       <main className="relative">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}

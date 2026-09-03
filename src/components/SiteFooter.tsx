@@ -2,9 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Sparkles } from "lucide-react";
 
 import { NAV } from "@/components/SiteHeader";
-import logoAsset from "@/assets/brandit-logo-new.png.asset.json";
-
-const LOGO_SRC = logoAsset.url;
+import LOGO_SRC from "@/assets/brandit-logo-new.png";
 
 export function SiteFooter() {
   return (

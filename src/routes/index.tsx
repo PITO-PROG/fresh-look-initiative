@@ -5,7 +5,7 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { ClientLogoWall } from "@/components/ClientLogoWall";
 import { HeroSlider, type HeroSlide } from "@/components/HeroSlider";
 import { MediaSlot } from "@/components/MediaSlot";
-import { Prism3D } from "@/components/Prism3D";
+
 import { Section } from "@/components/Section";
 import { TiltCard } from "@/components/TiltCard";
 import { WorkGallery } from "@/components/WorkGallery";
@@ -162,13 +162,8 @@ function Hero() {
             style={{ transformStyle: "preserve-3d" }}
             className="depth-shadow h-[26rem] w-full rounded-3xl sm:h-[32rem] lg:h-[36rem]"
           >
-            <HeroSlider slides={HERO_SLIDES} />
+          <HeroSlider slides={HERO_SLIDES} />
           </motion.div>
-
-          <Prism3D
-            size={116}
-            className="absolute -bottom-14 -left-14 z-20 hidden lg:block"
-          />
         </div>
       </div>
     </section>
@@ -303,7 +298,7 @@ function StatsBand() {
             key={s.label}
             whileHover={{ y: -6 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-2xl border border-primary-foreground/20 bg-primary-foreground/10 px-6 py-6 backdrop-blur-sm"
+            className="rounded-2xl border border-primary-foreground/20 px-6 py-6"
           >
             <p className="font-display text-4xl font-bold text-primary-foreground">{s.value}</p>
             <p className="mt-2 text-sm text-primary-foreground">{s.label}</p>
@@ -439,7 +434,7 @@ function PromiseBand() {
         <Stagger className="grid gap-4 sm:grid-cols-3">
           {PROMISES.map((item) => (
             <StaggerItem key={item.title} variant="rise">
-              <div className="h-full rounded-2xl border border-primary-foreground/20 bg-primary-foreground/10 p-6 backdrop-blur-sm">
+              <div className="h-full rounded-2xl border border-primary-foreground/20 p-6">
                 <h3 className="font-display text-lg font-semibold text-primary-foreground">
                   {item.title}
                 </h3>

@@ -6,7 +6,8 @@ import { PageHero } from "@/components/PageHero";
 import { FadeUp, SlideIn, Stagger, StaggerItem } from "@/components/motion";
 import { SERVICES } from "@/lib/site-data";
 
-import contactHero from "@/assets/photos/client-smile.jpg";
+import contactHeroAsset from "@/assets/brand/sign-brandit-3d-fascia.jpg.asset.json";
+const contactHero = contactHeroAsset.url;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

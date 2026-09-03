@@ -10,8 +10,7 @@ import { PageHero } from "@/components/PageHero";
 import { FadeUp, Stagger, StaggerItem } from "@/components/motion";
 import { CLIENTS, SECTORS } from "@/lib/site-data";
 
-import clientsHeroAsset from "@/assets/brand/marketing-aboosto-mediawall.jpg.asset.json";
-const clientsHero = clientsHeroAsset.url;
+import clientsHero from "@/assets/brand/marketing-aboosto-mediawall.jpg";
 
 export const Route = createFileRoute("/clients")({
   head: () => ({

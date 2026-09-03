@@ -6,8 +6,7 @@ import { TiltCard } from "@/components/TiltCard";
 import { FadeUp, MaskReveal, Parallax, SlideIn, Stagger, StaggerItem } from "@/components/motion";
 import { SECTORS, STATS } from "@/lib/site-data";
 
-import aboutHeroAsset from "@/assets/brand/wall-brandit-reception.jpg.asset.json";
-const aboutHero = aboutHeroAsset.url;
+import aboutHero from "@/assets/brand/wall-brandit-reception.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

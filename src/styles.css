@@ -6,7 +6,7 @@
 
 /*
  * Brand It KE design system.
- * Brand palette (from fliers): flat cyan #3fa1da, violet #14567f.
+ * Brand palette (from fliers): flat cyan #3fa1da, violet #652c7f.
  * All colors in oklch. Never hardcode colors in components.
  */
 
@@ -51,25 +51,25 @@
   --radius: 0.75rem;
 
   --brand-cyan: #3fa1da;
-  --brand-violet: #14567f;
+  --brand-violet: #652c7f;
   --ink: oklch(0.21 0.02 268);
 
-  --background: #14567f; /* flat violet fill from flier */
+  --background: #652c7f; /* flat violet fill from flier */
   --foreground: oklch(1 0 0);
-  --surface: color-mix(in oklab, #14567f 92%, white);
-  --surface-2: color-mix(in oklab, #14567f 84%, white);
+  --surface: color-mix(in oklab, #652c7f 92%, white);
+  --surface-2: color-mix(in oklab, #652c7f 84%, white);
 
-  --card: color-mix(in oklab, #14567f 88%, white);
+  --card: color-mix(in oklab, #652c7f 88%, white);
   --card-foreground: oklch(1 0 0);
-  --popover: color-mix(in oklab, #14567f 88%, white);
+  --popover: color-mix(in oklab, #652c7f 88%, white);
   --popover-foreground: oklch(1 0 0);
 
   --primary: #3fa1da;
   --primary-foreground: oklch(1 0 0);
-  --secondary: #14567f;
+  --secondary: #652c7f;
   --secondary-foreground: oklch(1 0 0);
 
-  --muted: color-mix(in oklab, #14567f 78%, white);
+  --muted: color-mix(in oklab, #652c7f 78%, white);
   --muted-foreground: oklch(1 0 0);
   --accent: #3fa1da;
   --accent-foreground: oklch(1 0 0);

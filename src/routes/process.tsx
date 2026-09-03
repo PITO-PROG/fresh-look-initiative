@@ -7,8 +7,7 @@ import { PageHero } from "@/components/PageHero";
 import { FadeUp, MaskReveal, Stagger, StaggerItem } from "@/components/motion";
 import { PROCESS } from "@/lib/site-data";
 
-import processHeroAsset from "@/assets/brand/lit-brandit-reception-logo.jpg.asset.json";
-const processHero = processHeroAsset.url;
+import processHero from "@/assets/brand/lit-brandit-reception-logo.jpg";
 
 export const Route = createFileRoute("/process")({
   head: () => ({

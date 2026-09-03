@@ -2,15 +2,18 @@ import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Sparkles } from "lucide-react";
 
 import { NAV } from "@/components/SiteHeader";
+import logoAsset from "@/assets/brandit-logo-new.png.asset.json";
 
-const LOGO_SRC = "/brandit-logo-light.png";
+const LOGO_SRC = logoAsset.url;
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border py-14">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <img src={LOGO_SRC} alt="Brand It KE" className="h-10 w-auto" />
+          <span className="inline-block w-fit rounded-xl bg-white/95 p-3 shadow-sm">
+            <img src={LOGO_SRC} alt="Brand It KE" className="h-12 w-auto" />
+          </span>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Events, corporate and retail branding — designed, fabricated, printed and installed
             in-house from Nairobi.

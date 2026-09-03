@@ -6,7 +6,7 @@
 
 /*
  * Brand It KE design system.
- * Brand palette (from fliers): flat cyan #3fa1da, violet #652c7f.
+ * Brand palette (from fliers): flat cyan #3fa1da, violet #54246b.
  * All colors in oklch. Never hardcode colors in components.
  */
 
@@ -51,25 +51,25 @@
   --radius: 0.75rem;
 
   --brand-cyan: #3fa1da;
-  --brand-violet: #652c7f;
+  --brand-violet: #54246b;
   --ink: oklch(0.21 0.02 268);
 
-  --background: #652c7f; /* flat violet fill from flier */
+  --background: #54246b; /* flat violet fill from flier */
   --foreground: oklch(1 0 0);
-  --surface: color-mix(in oklab, #652c7f 92%, white);
-  --surface-2: color-mix(in oklab, #652c7f 84%, white);
+  --surface: color-mix(in oklab, #54246b 92%, white);
+  --surface-2: color-mix(in oklab, #54246b 84%, white);
 
-  --card: color-mix(in oklab, #652c7f 88%, white);
+  --card: color-mix(in oklab, #54246b 88%, white);
   --card-foreground: oklch(1 0 0);
-  --popover: color-mix(in oklab, #652c7f 88%, white);
+  --popover: color-mix(in oklab, #54246b 88%, white);
   --popover-foreground: oklch(1 0 0);
 
   --primary: #3fa1da;
   --primary-foreground: oklch(1 0 0);
-  --secondary: #652c7f;
+  --secondary: #54246b;
   --secondary-foreground: oklch(1 0 0);
 
-  --muted: color-mix(in oklab, #652c7f 78%, white);
+  --muted: color-mix(in oklab, #54246b 78%, white);
   --muted-foreground: oklch(1 0 0);
   --accent: #3fa1da;
   --accent-foreground: oklch(1 0 0);
@@ -105,6 +105,20 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+  }
+
+  /* grained violet wall texture behind everything */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("/__l5e/assets-v1/c515f43e-0801-4eb8-ad9e-de018b8c91ce/bg-texture-violet.jpg");
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: luminosity;
+    opacity: 0.7;
+    pointer-events: none;
   }
 
   h1,
@@ -327,7 +341,7 @@
 @utility section-band {
   position: relative;
   isolation: isolate;
-  background-color: var(--surface-2);
+  background-color: color-mix(in oklab, var(--surface-2) 82%, transparent);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -335,7 +349,7 @@
 @utility section-mesh {
   position: relative;
   isolation: isolate;
-  background-color: color-mix(in oklab, var(--brand-cyan) 10%, var(--background));
+  background-color: color-mix(in oklab, var(--brand-cyan) 10%, transparent);
 }
 
 /* thin luminous rule used to separate sections */
@@ -414,7 +428,7 @@
   position: relative;
   isolation: isolate;
   color: var(--primary-foreground);
-  background-color: var(--brand-violet);
+  background-color: color-mix(in oklab, var(--brand-violet) 80%, transparent);
 }
 
 /* Alternate solid band — cyan variant so adjacent accent sections switch colours */
@@ -422,13 +436,13 @@
   position: relative;
   isolation: isolate;
   color: var(--primary-foreground);
-  background-color: var(--brand-cyan);
+  background-color: color-mix(in oklab, var(--brand-cyan) 88%, transparent);
 }
 
 @utility section-accent-soft {
   position: relative;
   isolation: isolate;
-  background-color: color-mix(in oklab, var(--brand-violet) 24%, var(--background));
+  background-color: color-mix(in oklab, var(--brand-violet) 20%, transparent);
   border-top: 1px solid color-mix(in oklab, var(--brand-cyan) 40%, transparent);
   border-bottom: 1px solid color-mix(in oklab, var(--brand-violet) 40%, transparent);
 }

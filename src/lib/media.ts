@@ -47,6 +47,12 @@ import mAboostoMediaWall from "@/assets/brand/marketing-aboosto-mediawall.jpg.as
 import mBillboard from "@/assets/brand/sign-brandit-billboard.jpg.asset.json";
 import mAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg.asset.json";
 import mWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg.asset.json";
+import mWfTent from "@/assets/brand/marketing-wf-tent.jpg.asset.json";
+import mWfUmbrellas from "@/assets/brand/promo-wf-umbrellas.jpg.asset.json";
+import mWallPurple from "@/assets/brand/wall-brandit-purple.jpg.asset.json";
+import m3dFascia from "@/assets/brand/sign-brandit-3d-fascia.jpg.asset.json";
+import mInbetweenCardsProc from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
+import mBloomBuilding from "@/assets/brand/sign-bloomgrow-building.jpg.asset.json";
 
 export type MediaKey =
   | "home.hero"
@@ -75,8 +81,8 @@ export type MediaKey =
 export const media: Record<MediaKey, string | null> = {
   "home.hero": mWallReception.url,
   "home.showreel": mAboostoMediaWall.url,
-  "about.team": studioDesigner,
-  "about.workshop": workshopCrew,
+  "about.team": mWearSet.url,
+  "about.workshop": m3dFascia.url,
   "services.signage": mLitShopfront.url,
   "services.vehicle": mVan.url,
   "services.promo": mWfTumblers.url,
@@ -84,15 +90,15 @@ export const media: Record<MediaKey, string | null> = {
   "services.print": mInbetweenCards.url,
   "services.design": mBranditCards.url,
   "services.marketing": mBannerSet.url,
-  "process.brief": brandingSheet,
-  "process.design": designImg,
-  "process.produce": workshopCrew,
-  "process.install": installCrew,
+  "process.brief": mBranditCards.url,
+  "process.design": mInbetweenCardsProc.url,
+  "process.produce": mWallPurple.url,
+  "process.install": mBloomBuilding.url,
   "clients.case1": mBillboard.url,
   "clients.case2": mVan.url,
-  "clients.case3": clientSmile,
+  "clients.case3": mWfTent.url,
   "clients.case4": mAboostoWindows.url,
-  "clients.case5": colorWheel,
+  "clients.case5": mWfUmbrellas.url,
   "clients.case6": mWearSet.url,
   "contact.map": nairobiMap,
 };

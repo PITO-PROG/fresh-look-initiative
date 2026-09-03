@@ -49,7 +49,7 @@ import mAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg.asset.
 import mWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg.asset.json";
 import mWfTent from "@/assets/brand/marketing-wf-tent.jpg.asset.json";
 import mWfUmbrellas from "@/assets/brand/promo-wf-umbrellas.jpg.asset.json";
-import mWallPurple from "@/assets/brand/wall-brandit-purple.jpg.asset.json";
+
 import m3dFascia from "@/assets/brand/sign-brandit-3d-fascia.jpg.asset.json";
 import mInbetweenCardsProc from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
 import mBloomBuilding from "@/assets/brand/sign-bloomgrow-building.jpg.asset.json";
@@ -92,7 +92,7 @@ export const media: Record<MediaKey, string | null> = {
   "services.marketing": mBannerSet.url,
   "process.brief": mBranditCards.url,
   "process.design": mInbetweenCardsProc.url,
-  "process.produce": mWallPurple.url,
+  "process.produce": mLitShopfront.url,
   "process.install": mBloomBuilding.url,
   "clients.case1": mBillboard.url,
   "clients.case2": mVan.url,

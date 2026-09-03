@@ -50,6 +50,38 @@ import wearTshirt from "@/assets/portfolio/wear-tshirt.jpg";
 import windowBottles from "@/assets/portfolio/window-bottles.jpg";
 import windowDoors from "@/assets/portfolio/window-doors.jpg";
 
+// New client photography (CDN assets)
+import aLitShopfront from "@/assets/brand/sign-brandit-lit-shopfront.jpg.asset.json";
+import a3dFascia from "@/assets/brand/sign-brandit-3d-fascia.jpg.asset.json";
+import aVan from "@/assets/brand/vehicle-brandit-van.jpg.asset.json";
+import aReceptionLogo from "@/assets/brand/lit-brandit-reception-logo.jpg.asset.json";
+import aInbetweenCards from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
+import aBranditCards from "@/assets/brand/print-brandit-cards.jpg.asset.json";
+import aPharmacyShopfront from "@/assets/brand/sign-phramirit-shopfront.jpg.asset.json";
+import aPharmacyWindows from "@/assets/brand/window-phramirit-storefront.jpg.asset.json";
+import aIetkBanner from "@/assets/brand/banner-ietk-street.jpg.asset.json";
+import aBloomBuilding from "@/assets/brand/sign-bloomgrow-building.jpg.asset.json";
+import aBloomRoad from "@/assets/brand/road-bloomgrow-direction.jpg.asset.json";
+import aInbetweenRoad from "@/assets/brand/road-inbetween-estate.jpg.asset.json";
+import aWfUmbrellas from "@/assets/brand/promo-wf-umbrellas.jpg.asset.json";
+import aWfPowerbank from "@/assets/brand/promo-wf-powerbank.jpg.asset.json";
+import aWfMug from "@/assets/brand/promo-wf-mug.jpg.asset.json";
+import aWfCarrierBag from "@/assets/brand/marketing-wf-carrierbag.jpg.asset.json";
+import aWfNotebooks from "@/assets/brand/print-wf-notebooks.jpg.asset.json";
+import aWfTent from "@/assets/brand/marketing-wf-tent.jpg.asset.json";
+import aWfKeyholders from "@/assets/brand/promo-wf-keyholders.jpg.asset.json";
+import aWfBottles from "@/assets/brand/promo-wf-bottles.jpg.asset.json";
+import aWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg.asset.json";
+import aWfDiary from "@/assets/brand/promo-wf-diary.jpg.asset.json";
+import aAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg.asset.json";
+import aWallPurple from "@/assets/brand/wall-brandit-purple.jpg.asset.json";
+import aAboostoLift from "@/assets/brand/lift-aboosto-elevator.jpg.asset.json";
+import aWallReception from "@/assets/brand/wall-brandit-reception.jpg.asset.json";
+import aBillboard from "@/assets/brand/sign-brandit-billboard.jpg.asset.json";
+import aWearSet from "@/assets/brand/wear-brandit-set.jpg.asset.json";
+import aBannerSet from "@/assets/brand/marketing-banner-set.jpg.asset.json";
+import aAboostoMediaWall from "@/assets/brand/marketing-aboosto-mediawall.jpg.asset.json";
+
 export const WORK_CATEGORIES = [
   "3D & Shopfront Signs",
   "Illuminated & Neon",
@@ -157,6 +189,37 @@ export const WORK: WorkItem[] = [
   { src: printMenu, title: "Café menu design & print", client: "Restaurant client", category: "Print & Stationery" },
   { src: printBrochures, title: "Brochures, diaries & profiles", client: "Corporate print", category: "Print & Stationery" },
   { src: designIdentity, title: "Full identity roll-out kit", client: "Brand identity system", category: "Print & Stationery" },
+  // Latest client work
+  { src: a3dFascia.url, title: "3D shopfront fascia sign", client: "Brand It Solutions", category: "3D & Shopfront Signs" },
+  { src: aPharmacyShopfront.url, title: "Shopfront fascia & window graphics", client: "Phramirit Pharmacy", category: "3D & Shopfront Signs" },
+  { src: aBloomBuilding.url, title: "Building-mounted signboard", client: "Bloom & Grow Therapy", category: "3D & Shopfront Signs" },
+  { src: aLitShopfront.url, title: "Illuminated shopfront letters", client: "Brand It Solutions", category: "Illuminated & Neon" },
+  { src: aReceptionLogo.url, title: "Backlit reception logo wall", client: "Brand It Solutions", category: "Illuminated & Neon" },
+  { src: aBillboard.url, title: "Rooftop billboard build", client: "Brand It Solutions", category: "Roadside & Wayfinding" },
+  { src: aBloomRoad.url, title: "Roadside directional sign", client: "Bloom & Grow Therapy", category: "Roadside & Wayfinding" },
+  { src: aInbetweenRoad.url, title: "Real estate site board", client: "Inbetween Real Estate", category: "Roadside & Wayfinding" },
+  { src: aVan.url, title: "Full van wrap, all angles", client: "Brand It Solutions", category: "Vehicle Branding" },
+  { src: aAboostoWindows.url, title: "Retail window branding", client: "Aboosto", category: "Wall & Window" },
+  { src: aPharmacyWindows.url, title: "Storefront window graphics", client: "Phramirit Pharmacy", category: "Wall & Window" },
+  { src: aWallPurple.url, title: "Corridor wall branding", client: "Brand It Solutions", category: "Wall & Window" },
+  { src: aWallReception.url, title: "Reception wall branding", client: "Brand It Solutions", category: "Wall & Window" },
+  { src: aAboostoLift.url, title: "Lift door branding", client: "Aboosto", category: "Wall & Window" },
+  { src: aWearSet.url, title: "Polos, hoodies, caps & bags", client: "Brand It Solutions", category: "Corporate Wear" },
+  { src: aBannerSet.url, title: "Media wall, roll-up, flag & teardrop", client: "Brand It Solutions", category: "Banners & Activation" },
+  { src: aAboostoMediaWall.url, title: "Pop-up media walls", client: "Aboosto", category: "Banners & Activation" },
+  { src: aIetkBanner.url, title: "Street procession banner", client: "IET-K", category: "Banners & Activation" },
+  { src: aWfTent.url, title: "Branded gazebo & media wall", client: "Wells Fargo", category: "Banners & Activation" },
+  { src: aWfCarrierBag.url, title: "Branded carrier bags", client: "Wells Fargo", category: "Banners & Activation" },
+  { src: aWfUmbrellas.url, title: "Branded umbrellas", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfMug.url, title: "Branded mugs", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfBottles.url, title: "Branded water bottles", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfTumblers.url, title: "Tumbler & flask range", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfKeyholders.url, title: "Metal keyholders", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfPowerbank.url, title: "Branded power banks", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfDiary.url, title: "Executive diary & pen set", client: "Wells Fargo", category: "Promo Items" },
+  { src: aWfNotebooks.url, title: "Hardcover branded notebooks", client: "Wells Fargo", category: "Print & Stationery" },
+  { src: aInbetweenCards.url, title: "Business card design & print", client: "Inbetween Real Estate", category: "Print & Stationery" },
+  { src: aBranditCards.url, title: "Business card identity", client: "Brand It Solutions", category: "Print & Stationery" },
 ];
 
 /** Product guide, straight from the portfolio deck. */

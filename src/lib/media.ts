@@ -92,7 +92,7 @@ export const media: Record<MediaKey, string | null> = {
   "services.marketing": mBannerSet.url,
   "process.brief": mBranditCards.url,
   "process.design": mInbetweenCardsProc.url,
-  "process.produce": mWallPurple.url,
+  "process.produce": mLitShopfront.url,
   "process.install": mBloomBuilding.url,
   "clients.case1": mBillboard.url,
   "clients.case2": mVan.url,

@@ -35,6 +35,19 @@ import studioDesigner from "@/assets/photos/studio-designer.jpg";
 import clientSmile from "@/assets/photos/client-smile.jpg";
 import expoStand from "@/assets/photos/expo-stand.jpg";
 
+// New client photography (CDN assets)
+import mLitShopfront from "@/assets/brand/sign-brandit-lit-shopfront.jpg.asset.json";
+import mVan from "@/assets/brand/vehicle-brandit-van.jpg.asset.json";
+import mBranditCards from "@/assets/brand/print-brandit-cards.jpg.asset.json";
+import mInbetweenCards from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
+import mBannerSet from "@/assets/brand/marketing-banner-set.jpg.asset.json";
+import mWearSet from "@/assets/brand/wear-brandit-set.jpg.asset.json";
+import mWallReception from "@/assets/brand/wall-brandit-reception.jpg.asset.json";
+import mAboostoMediaWall from "@/assets/brand/marketing-aboosto-mediawall.jpg.asset.json";
+import mBillboard from "@/assets/brand/sign-brandit-billboard.jpg.asset.json";
+import mAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg.asset.json";
+import mWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg.asset.json";
+
 export type MediaKey =
   | "home.hero"
   | "home.showreel"
@@ -43,6 +56,7 @@ export type MediaKey =
   | "services.signage"
   | "services.vehicle"
   | "services.promo"
+  | "services.wear"
   | "services.print"
   | "services.design"
   | "services.marketing"
@@ -59,26 +73,27 @@ export type MediaKey =
   | "contact.map";
 
 export const media: Record<MediaKey, string | null> = {
-  "home.hero": brandedPackaging,
-  "home.showreel": socialMedia,
+  "home.hero": mWallReception.url,
+  "home.showreel": mAboostoMediaWall.url,
   "about.team": studioDesigner,
   "about.workshop": workshopCrew,
-  "services.signage": litLetters,
-  "services.vehicle": vehicle,
-  "services.promo": promoTags,
-  "services.print": stationeryFlatlay,
-  "services.design": colorWheel,
-  "services.marketing": expoStand,
+  "services.signage": mLitShopfront.url,
+  "services.vehicle": mVan.url,
+  "services.promo": mWfTumblers.url,
+  "services.wear": mWearSet.url,
+  "services.print": mInbetweenCards.url,
+  "services.design": mBranditCards.url,
+  "services.marketing": mBannerSet.url,
   "process.brief": brandingSheet,
   "process.design": designImg,
   "process.produce": workshopCrew,
   "process.install": installCrew,
-  "clients.case1": billboards,
-  "clients.case2": heroVehicle,
+  "clients.case1": mBillboard.url,
+  "clients.case2": mVan.url,
   "clients.case3": clientSmile,
-  "clients.case4": buildingBranding,
+  "clients.case4": mAboostoWindows.url,
   "clients.case5": colorWheel,
-  "clients.case6": brandedPackaging,
+  "clients.case6": mWearSet.url,
   "contact.map": nairobiMap,
 };
 

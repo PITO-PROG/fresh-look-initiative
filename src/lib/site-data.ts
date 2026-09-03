@@ -198,7 +198,7 @@ export const SERVICES: Service[] = [
       "Official shirts & blouses",
       "Overalls",
     ],
-    image: "services.promo",
+    image: "services.wear",
     short: "Corporate Wear",
     intro:
       "Uniforms are the closest your brand gets to your customer. We supply and brand garments — polos, shirts, hoodies, caps, overalls — using embroidery, screen or heat transfer chosen for the fabric so the mark stays crisp after repeated washing.",

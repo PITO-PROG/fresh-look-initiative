@@ -20,32 +20,32 @@ import {
 import { MARQUEE, PROCESS, SERVICES, STATS } from "@/lib/site-data";
 import { PRODUCT_GUIDE } from "@/lib/portfolio";
 
-import heroVehicle from "@/assets/hero-vehicle.jpg";
-import billboards from "@/assets/photos/billboards.jpg";
-import litLetters from "@/assets/photos/lit-letters.jpg";
-import stationery from "@/assets/photos/stationery-flatlay.jpg";
+import heroBillboard from "@/assets/brand/sign-brandit-billboard.jpg.asset.json";
+import heroLitShopfront from "@/assets/brand/sign-brandit-lit-shopfront.jpg.asset.json";
+import heroVan from "@/assets/brand/vehicle-brandit-van.jpg.asset.json";
+import heroWear from "@/assets/brand/wear-brandit-set.jpg.asset.json";
 
 const HERO_SLIDES: HeroSlide[] = [
   {
-    src: billboards,
+    src: heroBillboard.url,
     eyebrow: "Event branding",
     title: "Activations that fill the frame",
     copy: "Branded tents, backdrops, pull-ups and stage sets built for launch day.",
   },
   {
-    src: litLetters,
+    src: heroLitShopfront.url,
     eyebrow: "Signage fabrication",
     title: "3D signs, lit and installed",
     copy: "Acrylic and channel letters fabricated in-house, mounted and wired on site.",
   },
   {
-    src: heroVehicle,
+    src: heroVan.url,
     eyebrow: "Vehicle branding",
     title: "Fleets that advertise all day",
     copy: "Full and partial wraps in cast vinyl, applied to survive Nairobi roads.",
   },
   {
-    src: stationery,
+    src: heroWear.url,
     eyebrow: "Print & promo",
     title: "Print with a proper finish",
     copy: "Corporate gifts, apparel, brochures and large-format print, on time.",

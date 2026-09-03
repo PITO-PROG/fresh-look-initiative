@@ -36,23 +36,23 @@ import clientSmile from "@/assets/photos/client-smile.jpg";
 import expoStand from "@/assets/photos/expo-stand.jpg";
 
 // New client photography (CDN assets)
-import mLitShopfront from "@/assets/brand/sign-brandit-lit-shopfront.jpg.asset.json";
-import mVan from "@/assets/brand/vehicle-brandit-van.jpg.asset.json";
-import mBranditCards from "@/assets/brand/print-brandit-cards.jpg.asset.json";
-import mInbetweenCards from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
-import mBannerSet from "@/assets/brand/marketing-banner-set.jpg.asset.json";
-import mWearSet from "@/assets/brand/wear-brandit-set.jpg.asset.json";
-import mWallReception from "@/assets/brand/wall-brandit-reception.jpg.asset.json";
-import mAboostoMediaWall from "@/assets/brand/marketing-aboosto-mediawall.jpg.asset.json";
-import mBillboard from "@/assets/brand/sign-brandit-billboard.jpg.asset.json";
-import mAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg.asset.json";
-import mWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg.asset.json";
-import mWfTent from "@/assets/brand/marketing-wf-tent.jpg.asset.json";
-import mWfUmbrellas from "@/assets/brand/promo-wf-umbrellas.jpg.asset.json";
+import mLitShopfront from "@/assets/brand/sign-brandit-lit-shopfront.jpg";
+import mVan from "@/assets/brand/vehicle-brandit-van.jpg";
+import mBranditCards from "@/assets/brand/print-brandit-cards.jpg";
+import mInbetweenCards from "@/assets/brand/print-inbetween-cards.jpg";
+import mBannerSet from "@/assets/brand/marketing-banner-set.jpg";
+import mWearSet from "@/assets/brand/wear-brandit-set.jpg";
+import mWallReception from "@/assets/brand/wall-brandit-reception.jpg";
+import mAboostoMediaWall from "@/assets/brand/marketing-aboosto-mediawall.jpg";
+import mBillboard from "@/assets/brand/sign-brandit-billboard.jpg";
+import mAboostoWindows from "@/assets/brand/window-aboosto-storefront.jpg";
+import mWfTumblers from "@/assets/brand/promo-wf-tumblers.jpg";
+import mWfTent from "@/assets/brand/marketing-wf-tent.jpg";
+import mWfUmbrellas from "@/assets/brand/promo-wf-umbrellas.jpg";
 
-import m3dFascia from "@/assets/brand/sign-brandit-3d-fascia.jpg.asset.json";
-import mInbetweenCardsProc from "@/assets/brand/print-inbetween-cards.jpg.asset.json";
-import mBloomBuilding from "@/assets/brand/sign-bloomgrow-building.jpg.asset.json";
+import m3dFascia from "@/assets/brand/sign-brandit-3d-fascia.jpg";
+import mInbetweenCardsProc from "@/assets/brand/print-inbetween-cards.jpg";
+import mBloomBuilding from "@/assets/brand/sign-bloomgrow-building.jpg";
 
 export type MediaKey =
   | "home.hero"
@@ -79,27 +79,27 @@ export type MediaKey =
   | "contact.map";
 
 export const media: Record<MediaKey, string | null> = {
-  "home.hero": mWallReception.url,
-  "home.showreel": mAboostoMediaWall.url,
-  "about.team": mWearSet.url,
-  "about.workshop": m3dFascia.url,
-  "services.signage": mLitShopfront.url,
-  "services.vehicle": mVan.url,
-  "services.promo": mWfTumblers.url,
-  "services.wear": mWearSet.url,
-  "services.print": mInbetweenCards.url,
-  "services.design": mBranditCards.url,
-  "services.marketing": mBannerSet.url,
-  "process.brief": mBranditCards.url,
-  "process.design": mInbetweenCardsProc.url,
-  "process.produce": mLitShopfront.url,
-  "process.install": mBloomBuilding.url,
-  "clients.case1": mBillboard.url,
-  "clients.case2": mVan.url,
-  "clients.case3": mWfTent.url,
-  "clients.case4": mAboostoWindows.url,
-  "clients.case5": mWfUmbrellas.url,
-  "clients.case6": mWearSet.url,
+  "home.hero": mWallReception,
+  "home.showreel": mAboostoMediaWall,
+  "about.team": mWearSet,
+  "about.workshop": m3dFascia,
+  "services.signage": mLitShopfront,
+  "services.vehicle": mVan,
+  "services.promo": mWfTumblers,
+  "services.wear": mWearSet,
+  "services.print": mInbetweenCards,
+  "services.design": mBranditCards,
+  "services.marketing": mBannerSet,
+  "process.brief": mBranditCards,
+  "process.design": mInbetweenCardsProc,
+  "process.produce": mLitShopfront,
+  "process.install": mBloomBuilding,
+  "clients.case1": mBillboard,
+  "clients.case2": mVan,
+  "clients.case3": mWfTent,
+  "clients.case4": mAboostoWindows,
+  "clients.case5": mWfUmbrellas,
+  "clients.case6": mWearSet,
   "contact.map": nairobiMap,
 };
 

@@ -56,6 +56,7 @@ export type MediaKey =
   | "services.signage"
   | "services.vehicle"
   | "services.promo"
+  | "services.wear"
   | "services.print"
   | "services.design"
   | "services.marketing"
@@ -79,6 +80,7 @@ export const media: Record<MediaKey, string | null> = {
   "services.signage": mLitShopfront.url,
   "services.vehicle": mVan.url,
   "services.promo": mWfTumblers.url,
+  "services.wear": mWearSet.url,
   "services.print": mInbetweenCards.url,
   "services.design": mBranditCards.url,
   "services.marketing": mBannerSet.url,
